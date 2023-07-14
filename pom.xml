@@ -14,7 +14,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.hyte.stompjms</groupId>
   <artifactId>stompjms-project</artifactId>
-  <version>1.20-SNAPSHOT</version>
+  <version>1.21-SNAPSHOT</version>
   <packaging>pom</packaging>
   
   <name>${project.artifactId}</name>
@@ -243,12 +243,13 @@
       <artifactId>maven-release-plugin</artifactId>
       <version>3.0.0-M7</version>
       <configuration>
-        <pushChanges>false</pushChanges>
+        <pushChanges>true</pushChanges>
         <localCheckout>true</localCheckout>
         <autoVersionSubmodules>true</autoVersionSubmodules>
         <allowTimestampedSnapshots>false</allowTimestampedSnapshots>
         <preparationGoals>clean install</preparationGoals>
-        <goals>deploy</goals>
+        <tagNameFormat>v@{project.version}</tagNameFormat>
+        <goals>clean package deploy</goals>
       </configuration>
     </plugin>
     <plugin>

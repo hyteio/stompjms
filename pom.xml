@@ -249,7 +249,7 @@
         <allowTimestampedSnapshots>false</allowTimestampedSnapshots>
         <preparationGoals>clean install</preparationGoals>
         <tagNameFormat>v@{project.version}</tagNameFormat>
-        <goals>clean package deploy</goals>
+        <goals>clean package install deploy</goals>
       </configuration>
     </plugin>
     <plugin>

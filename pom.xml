@@ -447,7 +447,7 @@
                             </execution>
                         </executions>
                         <configuration>
-		            <doclint>all,-missing</doclint>
+                            <additionalJOption>-Xdoclint:none</additionalJOption>
                         </configuration>
                     </plugin>
                     <plugin>

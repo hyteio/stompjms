@@ -15,7 +15,7 @@
   <parent>
     <groupId>io.hyte.stompjms</groupId>
     <artifactId>stompjms-project</artifactId>
-    <version>1.25-SNAPSHOT</version>
+    <version>1.25</version>
   </parent>
   <artifactId>stompjms-activemq-test</artifactId>
   <name>${project.artifactId}</name>

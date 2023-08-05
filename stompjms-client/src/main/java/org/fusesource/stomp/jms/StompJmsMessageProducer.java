@@ -45,6 +45,16 @@ public class StompJmsMessageProducer implements MessageProducer {
         this.session.remove(this);
     }
 
+    @Override
+    public long getDeliveryDelay() throws JMSException {
+        throw new UnsupportedOperationException("getDeliveryDelay() is not supported");
+    }
+
+    @Override
+    public void setDeliveryDelay(long deliveryDelay) throws JMSException {
+        throw new UnsupportedOperationException("setDeliveryDelay(deliveryDelay) is not supported");
+    }
+
     /**
      * @return the delivery mode
      * @throws JMSException
@@ -155,6 +165,26 @@ public class StompJmsMessageProducer implements MessageProducer {
                     + this.destination.getName());
         }
         this.session.send(destination, message, deliveryMode, priority, timeToLive, disableMessageId);
+    }
+
+    @Override
+    public void send(Message message, CompletionListener completionListener) throws JMSException {
+        throw new UnsupportedOperationException("send(message, completionListener) is not supported");
+    }
+
+    @Override
+    public void send(Destination destination, Message message, CompletionListener completionListener) throws JMSException {
+        throw new UnsupportedOperationException("send(destination, message, completionListener) is not supported");
+    }
+
+    @Override
+    public void send(Message message, int deliveryMode, int priority, long timeToLive, CompletionListener completionListener) throws JMSException {
+        throw new UnsupportedOperationException("send(message, deliveryMode, priority, timeToLive, completionListener) is not supported");
+    }
+
+    @Override
+    public void send(Destination destination, Message message, int deliveryMode, int priority, long timeToLive, CompletionListener completionListener) throws JMSException {
+        throw new UnsupportedOperationException("send(destination, message, deliveryMode, priority, timeToLive, completionListener) is not supported");
     }
 
     /**

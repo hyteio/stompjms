@@ -9,7 +9,7 @@ a JMS client interface to the STOMP wire protocol.
 Reference
 ---------
 
-* [JMS 1.1 Specification](http://java.sun.com/products/jms/docs.html)
+* [JMS 3.1,2.0,1.1 Specification](http://java.sun.com/products/jms/docs.html)
 * [STOMP 1.0 Specification](http://stomp.github.com/stomp-specification-1.0.html)
 
 Background

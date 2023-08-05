@@ -140,6 +140,28 @@ public class StompJmsConnection implements Connection, TopicConnection, QueueCon
         return result;
     }
 
+    @Override
+    public Session createSession(int sessionMode) throws JMSException {
+        throw new UnsupportedOperationException("createSession(sessionMode) is not supported");
+    }
+
+    @Override
+    public Session createSession() throws JMSException {
+        throw new UnsupportedOperationException("createSession() is not supported");
+    }
+
+    @Override
+    public ConnectionConsumer createSharedDurableConnectionConsumer(Topic topic, String subscriptionName,
+            String messageSelector, ServerSessionPool sessionPool, int maxMessages) throws JMSException {
+        throw new UnsupportedOperationException("createSharedDurableConnectionConsumer(topic, subscriptionName, messageSelector, sessionPool, maxMessages) is not supported");
+    }
+
+    @Override
+    public ConnectionConsumer createSharedConnectionConsumer(Topic topic, String subscriptionName,
+            String messageSelector, ServerSessionPool sessionPool, int maxMessages) throws JMSException {
+        throw new UnsupportedOperationException("createSharedConnectionConsumer(topic, subscriptionName, messageSelector, sessionPool, maxMessages) is not supported");
+    }
+
     /**
      * @return clientId
      * @see javax.jms.Connection#getClientID()

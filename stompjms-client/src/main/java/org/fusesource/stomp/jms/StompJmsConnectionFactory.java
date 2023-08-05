@@ -124,6 +124,26 @@ public class StompJmsConnectionFactory extends JNDIStorable implements Connectio
         return createConnection(getUsername(), getPassword());
     }
 
+    @Override
+    public JMSContext createContext() {
+        throw new UnsupportedOperationException("createContext() is not supported");
+    }
+
+    @Override
+    public JMSContext createContext(int sessionMode) {
+        throw new UnsupportedOperationException("createContext(sessionMode) is not supported");
+    }
+
+    @Override
+    public JMSContext createContext(String userName, String password) {
+        throw new UnsupportedOperationException("createContext(userName, password) is not supported");
+    }
+
+    @Override
+    public JMSContext createContext(String userName, String password, int sessionMode) {
+        throw new UnsupportedOperationException("createContext(userName, password, sessionMode) is not supported");
+    }
+
     /**
      * @param userName
      * @param password

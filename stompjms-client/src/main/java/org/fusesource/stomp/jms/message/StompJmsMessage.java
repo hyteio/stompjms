@@ -900,4 +900,24 @@ public class StompJmsMessage implements javax.jms.Message {
     public void setConnection(StompJmsConnection connection) {
         this.connection = connection;
     }
+
+    @Override
+    public long getJMSDeliveryTime() throws JMSException {
+        throw new UnsupportedOperationException("getJMSDeliveryTime() is not supported");
+    }
+
+    @Override
+    public void setJMSDeliveryTime(long deliveryTime) throws JMSException {
+        throw new UnsupportedOperationException("setJMSDeliveryTime(deliveryTime) is not supported");
+    }
+
+    @Override
+    public <T> T getBody(Class<T> c) throws JMSException {
+        throw new UnsupportedOperationException("getBody(Class<T> c) is not supported");
+    }
+
+    @Override
+    public boolean isBodyAssignableTo(Class c) throws JMSException {
+        throw new UnsupportedOperationException("isBodyAssignableTo(Class) is not supported");
+    }
 }

@@ -386,6 +386,36 @@ public class StompJmsSession implements Session, QueueSession, TopicSession, Sto
         return result;
     }
 
+    @Override
+    public MessageConsumer createSharedConsumer(Topic topic, String sharedSubscriptionName) throws JMSException {
+        throw new UnsupportedOperationException("createSharedConsumer(topic, sharedSubscriptionName) is not supported");
+    }
+
+    @Override
+    public MessageConsumer createSharedConsumer(Topic topic, String sharedSubscriptionName, String messageSelector) throws JMSException {
+        throw new UnsupportedOperationException("createSharedConsumer(topic, sharedSubscriptionName, messageSelector) is not supported");
+    }
+
+    @Override
+    public MessageConsumer createDurableConsumer(Topic topic, String name) throws JMSException {
+        throw new UnsupportedOperationException("createDurableConsumer(topic, name) is not supported");
+    }
+
+    @Override
+    public MessageConsumer createDurableConsumer(Topic topic, String name, String messageSelector, boolean noLocal) throws JMSException {
+        throw new UnsupportedOperationException("createDurableConsumer(topic, name, messageSelector, noLocal) is not supported");
+    }
+
+    @Override
+    public MessageConsumer createSharedDurableConsumer(Topic topic, String name) throws JMSException {
+        throw new UnsupportedOperationException("createSharedDurableConsumer(topic, name) is not supported");
+    }
+
+    @Override
+    public MessageConsumer createSharedDurableConsumer(Topic topic, String name, String messageSelector) throws JMSException {
+        throw new UnsupportedOperationException("createSharedDurableConsumer(topic, name, messageSelector) is not supported");
+    }
+
     /**
      * @param name
      * @throws JMSException

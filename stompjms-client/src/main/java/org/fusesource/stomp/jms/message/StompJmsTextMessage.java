@@ -13,9 +13,9 @@ package org.fusesource.stomp.jms.message;
 import org.fusesource.hawtbuf.Buffer;
 import org.fusesource.stomp.jms.StompJmsExceptionSupport;
 
-import javax.jms.JMSException;
-import javax.jms.MessageNotWriteableException;
-import javax.jms.TextMessage;
+import jakarta.jms.JMSException;
+import jakarta.jms.MessageNotWriteableException;
+import jakarta.jms.TextMessage;
 import java.io.UnsupportedEncodingException;
 
 import static org.fusesource.stomp.client.Constants.TRANSFORMATION;

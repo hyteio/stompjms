@@ -9,7 +9,7 @@
  */
 package org.fusesource.stomp.jms;
 
-import javax.jms.*;
+import jakarta.jms.*;
 import javax.net.ssl.SSLContext;
 import java.net.URI;
 
@@ -24,17 +24,17 @@ public class StompJmsQueueConnection extends StompJmsConnection {
 
     @Override
     public TopicSession createTopicSession(boolean transacted, int acknowledgeMode) throws JMSException {
-        throw new javax.jms.IllegalStateException("Operation not supported by a QueueConnection");
+        throw new jakarta.jms.IllegalStateException("Operation not supported by a QueueConnection");
     }
 
     @Override
     public ConnectionConsumer createDurableConnectionConsumer(Topic topic, String subscriptionName, String messageSelector, ServerSessionPool sessionPool, int maxMessages) throws JMSException {
-        throw new javax.jms.IllegalStateException("Operation not supported by a QueueConnection");
+        throw new jakarta.jms.IllegalStateException("Operation not supported by a QueueConnection");
     }
 
     @Override
     public ConnectionConsumer createConnectionConsumer(Topic topic, String messageSelector, ServerSessionPool sessionPool, int maxMessages) throws JMSException {
-        throw new javax.jms.IllegalStateException("Operation not supported by a QueueConnection");
+        throw new jakarta.jms.IllegalStateException("Operation not supported by a QueueConnection");
     }
 
 }

@@ -19,8 +19,8 @@ import org.fusesource.stomp.client.Promise;
 import org.fusesource.stomp.codec.StompFrame;
 import org.fusesource.stomp.jms.message.StompJmsMessage;
 
-import javax.jms.IllegalStateException;
-import javax.jms.*;
+import jakarta.jms.IllegalStateException;
+import jakarta.jms.*;
 import java.io.IOException;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -248,7 +248,7 @@ public class StompJmsMessageConsumer implements MessageConsumer, StompJmsMessage
                 message.setAcknowledgeCallback(new Callable<Void>(){
                     public Void call() throws Exception {
                         if( session.channel == null ) {
-                            throw new javax.jms.IllegalStateException("Session closed.");
+                            throw new jakarta.jms.IllegalStateException("Session closed.");
                         }
                         doAck(message);
                         return null;

@@ -13,9 +13,9 @@ import org.fusesource.hawtbuf.AsciiBuffer;
 import org.fusesource.hawtbuf.Buffer;
 import org.fusesource.stomp.codec.StompFrame;
 
-import javax.jms.JMSException;
-import javax.jms.TemporaryQueue;
-import javax.jms.TemporaryTopic;
+import jakarta.jms.JMSException;
+import jakarta.jms.TemporaryQueue;
+import jakarta.jms.TemporaryTopic;
 
 import java.util.Map;
 import java.util.UUID;

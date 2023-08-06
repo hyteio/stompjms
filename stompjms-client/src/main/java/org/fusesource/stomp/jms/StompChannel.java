@@ -40,8 +40,8 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import javax.jms.ExceptionListener;
-import javax.jms.JMSException;
+import jakarta.jms.ExceptionListener;
+import jakarta.jms.JMSException;
 import javax.net.ssl.SSLContext;
 
 import org.fusesource.hawtbuf.AsciiBuffer;

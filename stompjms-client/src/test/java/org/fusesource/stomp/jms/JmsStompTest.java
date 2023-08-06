@@ -12,7 +12,7 @@ package org.fusesource.stomp.jms;
 import junit.framework.TestCase;
 import org.fusesource.stomp.client.ApolloBroker;
 
-import javax.jms.*;
+import jakarta.jms.*;
 import javax.naming.InitialContext;
 
 import java.util.Hashtable;

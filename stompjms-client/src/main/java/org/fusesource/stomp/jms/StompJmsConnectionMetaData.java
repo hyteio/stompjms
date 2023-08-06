@@ -10,7 +10,7 @@
 
 package org.fusesource.stomp.jms;
 
-import javax.jms.ConnectionMetaData;
+import jakarta.jms.ConnectionMetaData;
 import java.util.Enumeration;
 import java.util.Vector;
 import java.util.regex.Matcher;

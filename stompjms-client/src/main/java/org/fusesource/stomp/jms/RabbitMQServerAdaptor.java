@@ -7,7 +7,7 @@ import static org.fusesource.stomp.client.Constants.UNSUBSCRIBE;
 
 import java.util.Map;
 
-import javax.jms.JMSException;
+import jakarta.jms.JMSException;
 
 import org.fusesource.hawtbuf.AsciiBuffer;
 import org.fusesource.stomp.codec.StompFrame;

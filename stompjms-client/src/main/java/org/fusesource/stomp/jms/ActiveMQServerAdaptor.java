@@ -11,7 +11,7 @@ package org.fusesource.stomp.jms;
 
 import org.fusesource.hawtbuf.AsciiBuffer;
 
-import javax.jms.JMSException;
+import jakarta.jms.JMSException;
 import java.util.Map;
 
 import static org.fusesource.stomp.client.Constants.*;

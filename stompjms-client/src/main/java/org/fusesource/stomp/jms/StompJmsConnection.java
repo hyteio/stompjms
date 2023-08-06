@@ -10,8 +10,8 @@
 
 package org.fusesource.stomp.jms;
 
-import javax.jms.*;
-import javax.jms.IllegalStateException;
+import jakarta.jms.*;
+import jakarta.jms.IllegalStateException;
 import javax.net.ssl.SSLContext;
 import java.net.URI;
 import java.util.List;

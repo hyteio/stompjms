@@ -26,8 +26,8 @@ import java.util.Properties;
 import java.util.StringTokenizer;
 import java.util.concurrent.ConcurrentHashMap;
 
-import javax.jms.Queue;
-import javax.jms.Topic;
+import jakarta.jms.Queue;
+import jakarta.jms.Topic;
 import javax.naming.Context;
 import javax.naming.NamingException;
 import javax.naming.spi.InitialContextFactory;

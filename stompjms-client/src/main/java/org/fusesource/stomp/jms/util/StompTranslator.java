@@ -17,7 +17,7 @@ import org.fusesource.hawtbuf.DataByteArrayOutputStream;
 import org.fusesource.stomp.codec.StompFrame;
 import org.fusesource.stomp.jms.message.*;
 
-import javax.jms.JMSException;
+import jakarta.jms.JMSException;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.Map;

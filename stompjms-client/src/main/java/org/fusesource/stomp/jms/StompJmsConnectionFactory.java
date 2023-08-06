@@ -14,7 +14,7 @@ package org.fusesource.stomp.jms;
 import org.fusesource.stomp.jms.jndi.JNDIStorable;
 import org.fusesource.stomp.jms.util.PropertyUtil;
 
-import javax.jms.*;
+import jakarta.jms.*;
 import javax.net.ssl.SSLContext;
 import java.net.URI;
 import java.net.URISyntaxException;

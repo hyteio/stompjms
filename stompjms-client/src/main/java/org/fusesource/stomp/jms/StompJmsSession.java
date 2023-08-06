@@ -17,8 +17,8 @@ import org.fusesource.hawtbuf.ByteArrayOutputStream;
 import org.fusesource.stomp.codec.StompFrame;
 import org.fusesource.stomp.jms.message.*;
 
-import javax.jms.*;
-import javax.jms.IllegalStateException;
+import jakarta.jms.*;
+import jakarta.jms.IllegalStateException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -118,7 +118,7 @@ public class StompJmsSession implements Session, QueueSession, TopicSession, Sto
     public void recover() throws JMSException {
         checkClosed();
         if (getTransacted()) {
-            throw new javax.jms.IllegalStateException("Cannot call recover() on a transacted session");
+            throw new jakarta.jms.IllegalStateException("Cannot call recover() on a transacted session");
         }
         // TODO: re-deliver all un-acked client-ack messages.
     }
@@ -130,7 +130,7 @@ public class StompJmsSession implements Session, QueueSession, TopicSession, Sto
     public void commit() throws JMSException {
         checkClosed();
         if (!getTransacted()) {
-            throw new javax.jms.IllegalStateException("Not a transacted session");
+            throw new jakarta.jms.IllegalStateException("Not a transacted session");
         }
         for (StompJmsMessageConsumer c : consumers.values()) {
             c.commit();
@@ -146,7 +146,7 @@ public class StompJmsSession implements Session, QueueSession, TopicSession, Sto
     public void rollback() throws JMSException {
         checkClosed();
         if (!getTransacted()) {
-            throw new javax.jms.IllegalStateException("Not a transacted session");
+            throw new jakarta.jms.IllegalStateException("Not a transacted session");
         }
         for (StompJmsMessageConsumer c : consumers.values()) {
             c.rollback();

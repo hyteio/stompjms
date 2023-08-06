@@ -13,8 +13,8 @@ package org.fusesource.stomp.jms;
 import org.fusesource.hawtbuf.AsciiBuffer;
 import org.fusesource.stomp.jms.message.StompJmsMessage;
 
-import javax.jms.IllegalStateException;
-import javax.jms.*;
+import jakarta.jms.IllegalStateException;
+import jakarta.jms.*;
 import java.util.Enumeration;
 import java.util.concurrent.atomic.AtomicBoolean;
 import static org.fusesource.stomp.client.Constants.*;

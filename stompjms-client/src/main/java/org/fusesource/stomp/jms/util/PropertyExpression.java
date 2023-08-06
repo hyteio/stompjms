@@ -14,9 +14,9 @@ import org.fusesource.stomp.jms.StompJmsDestination;
 import org.fusesource.stomp.jms.StompJmsExceptionSupport;
 import org.fusesource.stomp.jms.message.StompJmsMessage;
 
-import javax.jms.DeliveryMode;
-import javax.jms.InvalidDestinationException;
-import javax.jms.JMSException;
+import jakarta.jms.DeliveryMode;
+import jakarta.jms.InvalidDestinationException;
+import jakarta.jms.JMSException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;

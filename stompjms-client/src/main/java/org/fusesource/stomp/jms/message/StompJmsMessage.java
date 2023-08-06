@@ -19,7 +19,7 @@ import org.fusesource.stomp.codec.StompFrame;
 import org.fusesource.stomp.jms.util.TypeConversionSupport;
 import org.fusesource.stomp.jms.util.PropertyExpression;
 
-import javax.jms.*;
+import jakarta.jms.*;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.*;
@@ -29,7 +29,7 @@ import static org.fusesource.hawtbuf.Buffer.ascii;
 import static org.fusesource.stomp.client.Constants.*;
 import static org.fusesource.stomp.codec.StompFrame.*;
 
-public class StompJmsMessage implements javax.jms.Message {
+public class StompJmsMessage implements jakarta.jms.Message {
 
     private static final Map<String, PropertySetter> JMS_PROPERTY_SETERS = new HashMap<String, PropertySetter>();
 

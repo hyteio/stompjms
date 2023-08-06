@@ -12,7 +12,7 @@ package org.fusesource.stomp.jms.message;
 
 import org.fusesource.stomp.jms.*;
 
-import javax.jms.*;
+import jakarta.jms.*;
 import java.util.Enumeration;
 
 /**

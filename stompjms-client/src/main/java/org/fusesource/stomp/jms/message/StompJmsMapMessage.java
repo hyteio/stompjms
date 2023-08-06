@@ -13,10 +13,10 @@ package org.fusesource.stomp.jms.message;
 import org.fusesource.hawtbuf.Buffer;
 import org.fusesource.stomp.jms.util.StompTranslator;
 
-import javax.jms.JMSException;
-import javax.jms.MapMessage;
-import javax.jms.MessageFormatException;
-import javax.jms.MessageNotWriteableException;
+import jakarta.jms.JMSException;
+import jakarta.jms.MapMessage;
+import jakarta.jms.MessageFormatException;
+import jakarta.jms.MessageNotWriteableException;
 import java.io.IOException;
 import java.util.Collections;
 import java.util.Enumeration;

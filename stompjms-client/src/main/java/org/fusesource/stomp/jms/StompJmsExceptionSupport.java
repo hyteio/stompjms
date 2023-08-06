@@ -10,9 +10,9 @@
 
 package org.fusesource.stomp.jms;
 
-import javax.jms.JMSException;
-import javax.jms.MessageEOFException;
-import javax.jms.MessageFormatException;
+import jakarta.jms.JMSException;
+import jakarta.jms.MessageEOFException;
+import jakarta.jms.MessageFormatException;
 
 /**
  * Create those nice, old fashioned JMS Exceptions

@@ -14,7 +14,7 @@ import junit.framework.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.jms.*;
+import jakarta.jms.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Enumeration;

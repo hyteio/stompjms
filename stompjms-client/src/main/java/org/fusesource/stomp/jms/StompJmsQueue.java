@@ -10,7 +10,7 @@
 
 package org.fusesource.stomp.jms;
 
-import javax.jms.Queue;
+import jakarta.jms.Queue;
 
 /**
  * Queue implementation

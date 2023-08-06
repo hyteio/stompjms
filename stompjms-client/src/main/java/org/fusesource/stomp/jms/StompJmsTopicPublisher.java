@@ -10,8 +10,8 @@
 
 package org.fusesource.stomp.jms;
 
-import javax.jms.IllegalStateException;
-import javax.jms.*;
+import jakarta.jms.IllegalStateException;
+import jakarta.jms.*;
 
 /**
  * Implementation of a TopicPublisher

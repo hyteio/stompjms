@@ -14,7 +14,7 @@ import org.apache.activemq.apollo.broker.Broker;
 import org.apache.activemq.apollo.broker.BrokerFactory;
 import org.apache.activemq.apollo.util.ServiceControl;
 
-import javax.jms.*;
+import jakarta.jms.*;
 import java.io.File;
 import java.io.IOException;
 import java.net.InetSocketAddress;

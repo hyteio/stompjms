@@ -12,7 +12,7 @@ package org.fusesource.stomp.jms;
 
 import org.fusesource.hawtbuf.AsciiBuffer;
 
-import javax.jms.JMSException;
+import jakarta.jms.JMSException;
 
 /**
  * Implementation of a TopicSubscriber

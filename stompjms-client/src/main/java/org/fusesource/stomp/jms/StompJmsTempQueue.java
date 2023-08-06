@@ -10,7 +10,7 @@
 
 package org.fusesource.stomp.jms;
 
-import javax.jms.TemporaryQueue;
+import jakarta.jms.TemporaryQueue;
 
 
 /**

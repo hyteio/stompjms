@@ -13,8 +13,8 @@ package org.fusesource.stomp.jms.message;
 import org.fusesource.hawtbuf.Buffer;
 import org.fusesource.stomp.jms.util.StompTranslator;
 
-import javax.jms.JMSException;
-import javax.jms.ObjectMessage;
+import jakarta.jms.JMSException;
+import jakarta.jms.ObjectMessage;
 import java.io.Serializable;
 
 /**

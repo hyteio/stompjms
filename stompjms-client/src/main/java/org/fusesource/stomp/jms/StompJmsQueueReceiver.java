@@ -12,10 +12,10 @@ package org.fusesource.stomp.jms;
 
 import org.fusesource.hawtbuf.AsciiBuffer;
 
-import javax.jms.IllegalStateException;
-import javax.jms.JMSException;
-import javax.jms.Queue;
-import javax.jms.QueueReceiver;
+import jakarta.jms.IllegalStateException;
+import jakarta.jms.JMSException;
+import jakarta.jms.Queue;
+import jakarta.jms.QueueReceiver;
 
 /**
  * Implementation of a Jms QueueReceiver

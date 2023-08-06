@@ -14,8 +14,8 @@ import org.fusesource.hawtbuf.AsciiBuffer;
 import org.fusesource.stomp.codec.StompFrame;
 import org.fusesource.stomp.jms.jndi.JNDIStorable;
 
-import javax.jms.InvalidDestinationException;
-import javax.jms.JMSException;
+import jakarta.jms.InvalidDestinationException;
+import jakarta.jms.JMSException;
 import java.io.Externalizable;
 import java.io.IOException;
 import java.io.ObjectInput;
@@ -26,7 +26,7 @@ import java.util.Map;
 /**
  * Jms Destination
  */
-public class StompJmsDestination extends JNDIStorable implements Externalizable, javax.jms.Destination,
+public class StompJmsDestination extends JNDIStorable implements Externalizable, jakarta.jms.Destination,
         Comparable<StompJmsDestination> {
 
     protected transient String prefix;

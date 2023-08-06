@@ -12,10 +12,10 @@ package org.fusesource.stomp.jms;
 
 import org.fusesource.hawtbuf.AsciiBuffer;
 
-import javax.jms.IllegalStateException;
-import javax.jms.JMSException;
-import javax.jms.Topic;
-import javax.jms.TopicSubscriber;
+import jakarta.jms.IllegalStateException;
+import jakarta.jms.JMSException;
+import jakarta.jms.Topic;
+import jakarta.jms.TopicSubscriber;
 
 /**
  * Implementation of a TopicSubscriber

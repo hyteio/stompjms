@@ -12,8 +12,8 @@ package org.fusesource.stomp.jms;
 
 import org.fusesource.stomp.jms.message.StompJmsMessageTransformation;
 
-import javax.jms.*;
-import javax.jms.IllegalStateException;
+import jakarta.jms.*;
+import jakarta.jms.IllegalStateException;
 
 /**
  * Implementation of a Jms MessageProducer

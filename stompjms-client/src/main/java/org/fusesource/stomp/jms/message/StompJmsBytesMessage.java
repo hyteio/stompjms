@@ -16,7 +16,7 @@ import org.fusesource.hawtbuf.DataByteArrayInputStream;
 import org.fusesource.hawtbuf.DataByteArrayOutputStream;
 import org.fusesource.stomp.jms.StompJmsExceptionSupport;
 
-import javax.jms.*;
+import jakarta.jms.*;
 import java.io.DataInputStream;
 import java.io.EOFException;
 import java.io.IOException;
